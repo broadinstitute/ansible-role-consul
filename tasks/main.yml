@@ -1,0 +1,6 @@
+---
+- name: Run Consul container
+  docker_container:
+    name: consul
+    image: consul
+    command: consul agent -server -bootstrap
